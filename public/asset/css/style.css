@@ -1,0 +1,33 @@
+
+
+
+:root{
+    --bg:rgb(35, 0, 83);
+    --text:white;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+  background-color: var(--bg);
+}
+
+.navbar-brand,
+.nav-link{
+    color: var(--text) !important;
+}
+
+.carausel-image{
+    height: 70vh !important;
+    object-fit: cover;
+}
+
+.container-app{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer{
+    margin-top: 4rem;
+}
