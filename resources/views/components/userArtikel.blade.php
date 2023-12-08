@@ -24,6 +24,9 @@
                         <p class="card-text">{!! $articl->body !!}</p>
                         {{-- tampilan data komen dan user yang mengomentari --}}
                         <h1>Komentar</h1>
+                        @if ($comments->isEmpty())
+                              <p>Belum ada komentar</p>
+                        @endif
                         @foreach ($comments->where('article_id', $articl->id) as $comment)
                             <p class="fw-bold card p-3">{{ $comment->user->name }}: <span
                                     class="fw-normal">{{ $comment->comment }}</span></p>
